@@ -1,0 +1,43 @@
+// variables
+$font-stack: 'Roboto', sans-serif;
+// colors
+$primary-color: #28596E;
+$primary-shade-1: #082430;
+$primary-shade-2: #153D4F;
+$primary-shade-3: #3F758C;
+$primary-shade-4: #6299B0;
+$complement-teal: #236A67;
+$complement-teal-shade-1: #062E2D;
+$complement-teal-shade-2: #114C4A;
+$complement-teal-shade-3: #3A8784;
+$complement-teal-shade-4: #5BABA8;
+$complement-blue: #2B4E72;
+$complement-blue-shade-1: #0A1D32;
+$complement-blue-shade-2: #173451;
+$complement-blue-shade-3: #446990;
+$complement-blue-shade-4: #678DB5;
+$white: #FFFFFF;
+$whitesmoke: #F5F5F5;
+$black: #000000;
+
+$dark-grey: #30343f;
+$dark-blue: #273469;
+$light-blue: #00a6e2;
+$pink: #d62246;
+
+* {
+  box-sizing: border-box;
+  color:inherit;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@import "~font-awesome/scss/font-awesome";
+@import "app.scss";
+@import "header.scss";
+@import "bio.scss";
+@import "project.scss";
+@import "footer.scss";
