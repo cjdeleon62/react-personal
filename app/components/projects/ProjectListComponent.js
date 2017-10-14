@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import ProjectComponent from 'components/projects/ProjectComponent';
 import ProjectModalComponent from 'components/projects/ProjectModalComponent';
 
-const projectNames = ['Showtime React', 'Hello Blog', 'Weather Maps'];
-
 const projects = [
   {
     'title': 'Showtime React',
@@ -34,21 +32,23 @@ class ProjectListComponent extends Component {
 
     this.state = {
       modal: false,
-      project: null,
+      project: {},
     };
 
     this.handleOpenModal = this.openModal.bind(this);
     this.handleCloseModal = this.closeModal.bind(this);
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.state.project !== nextState.project;
+  }
+
   openModal(project) {
-    console.log('firing open modal');
-    this.setState({ modal: true, project: project });
+    this.setState({ modal: true, project });
   }
 
   closeModal() {
-    console.log('firing close modal');
-    this.setState({ modal: false, project: null });
+    this.setState({ modal: false, project: {} });
   }
 
   render() {
@@ -56,17 +56,17 @@ class ProjectListComponent extends Component {
       <div className="project__list">
         <div className="project__list__title">My Portfolio</div>
         <hr />
-        {projects.map( project => <ProjectComponent 
-          key={project.title} 
-          name={project.title} 
-          description={project.description}
-          technology={project.technology}
-          link={project.link}
-          onModalOpen={this.handleOpenModal}
-          />)}
+        {projects.map(project => (
+          <ProjectComponent
+            key={project.title}
+            project={project}
+            openModal={this.handleOpenModal}
+          />
+        ))}
         <ProjectModalComponent
           isModalOpen={this.state.modal}
           onModalClose={this.handleCloseModal}
+          project={this.state.project}
         />
       </div>
     );

@@ -2,12 +2,11 @@ import React from 'react';
 
 const ProjectModalComponent = props => {
   const modalClasses = props.isModalOpen ? '--open' : '';
-  console.log(props.isModalOpen);
   return (
     <div id="myModal" className={`modal${modalClasses}`}>
       <div className="modal-content">
         <div className="modal-header">
-          This is the modal header title
+          {props.project.title}
           <span
             className="close"
             onClick={props.onModalClose}
@@ -16,7 +15,7 @@ const ProjectModalComponent = props => {
           </span>
         </div>
         <div className="modal-text">
-          <p>This is the project modal</p>
+          <p>{props.project.description}</p>
         </div>
       </div>
     </div>
@@ -25,4 +24,4 @@ const ProjectModalComponent = props => {
 
 ProjectModalComponent.displayName = 'ProjectModalComponent';
 
-export default ProjectModalComponent; 
+export default ProjectModalComponent;
