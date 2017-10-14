@@ -25,6 +25,9 @@ $dark-blue: #273469;
 $light-blue: #00a6e2;
 $pink: #d62246;
 
+// Needed to import the font images through the loaders
+$fa-font-path : '~font-awesome/fonts';
+
 * {
   box-sizing: border-box;
   color:inherit;
@@ -35,7 +38,8 @@ $pink: #d62246;
   box-sizing: border-box;
 }
 
-@import "~font-awesome/scss/font-awesome";
+// Don't forget about our font awesome styles!
+@import "~font-awesome/scss/font-awesome.scss";
 @import "app.scss";
 @import "header.scss";
 @import "bio.scss";
