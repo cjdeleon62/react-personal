@@ -69,19 +69,31 @@
 .modal-content {
   background-color: #fefefe;
   border: 1px solid #888;
-  width: 80%;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 12rem;
 
   .modal-header {
     background-color: $dark-blue;
     color: $white;
-    padding: 0px 20px;
+    padding: 1rem 2rem;
     position: relative;
-    height: 50px;
-    line-height: 3rem;
+
+    .modal-header-title {
+      display: inline-block;
+      line-height: 3rem;
+      font-size: 2.5rem;
+    }
+
+    .close {
+      font-size: 2rem;
+      line-height: 1.5rem;
+    }
   }
 
   .modal-text {
-    padding: 0px 20px;
+    font-size: 1.2rem;
+    padding: 0px 5rem;
   }
  }
 
