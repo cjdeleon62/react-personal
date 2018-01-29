@@ -1,5 +1,4 @@
 .project__list {
-  width: 1000px;
   margin: 0 auto;
   margin-top: 3rem;
  
@@ -11,7 +10,6 @@
 
   hr {
     margin-bottom: 2rem;
-    width: 300px;
     height: .2rem;
     background: $dark-grey;
     border: none;
@@ -22,8 +20,6 @@
     background: $dark-blue;
     text-align: center;
     vertical-align: middle;
-    height: 300px;
-    width: 400px;
     display:  inline-block;
     margin:0 50px;
     margin-bottom: 5rem;

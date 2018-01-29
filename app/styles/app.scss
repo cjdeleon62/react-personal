@@ -1,9 +1,17 @@
-html, body {
+html, body, .app {
   margin: 0;
-  background: $whitesmoke;
-  color: $dark-grey;
-}
+  height: 100%;
+  width: 100%;
+  background: $dark-grey;
+  color: $white;
 
-.container {
-  padding-top: 3rem;
+  .content {
+    min-height: 100%;
+    width: 100%;
+    padding-top: 3rem;
+    .layout {
+      min-height: 100%;
+      width: 100%;
+    }
+  }
 }

@@ -23,6 +23,7 @@ class ProjectComponent extends Component {
 
   render() {
     const { project } = this.props;
+    console.log('here is the project', project);
     const { title } = project;
 
     return (
