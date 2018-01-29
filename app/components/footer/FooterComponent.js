@@ -10,8 +10,8 @@ import React from 'react';
 // github-alt: fa-github-alt
 // 
 
-const mobileFooterIcons = [ 'fa fa-linkedin', 'fa fa-github'];
-const FooterIcons = [ 'fa fa-linkedin-square', 'fa fa-github-square'];
+const mobileFooterIcons = [ 'fab fa-linkedin', 'fab fa-github-alt'];
+const FooterIcons = [ 'fab fa-linkedin', 'fab fa-github-alt'];
 const FooterComponent = () => (
   <div className="footer">
     <div className="footer__title">
