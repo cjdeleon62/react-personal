@@ -8,7 +8,7 @@ import React from 'react';
 // github-square:fa-github-square
 // github: fa-github
 // github-alt: fa-github-alt
-// 
+//
 
 const mobileFooterIcons = [ 'fa fa-linkedin', 'fa fa-github'];
 const FooterIcons = [ 'fa fa-linkedin-square', 'fa fa-github-square'];

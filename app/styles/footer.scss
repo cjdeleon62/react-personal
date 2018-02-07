@@ -1,26 +1,27 @@
 .footer {
   padding: 0.5rem 0;
-  background: $complement-teal-shade-2;
+  background: $light-blue;
   bottom: 0;
   width: 100%;
-  position: relative;
+  // position: relative;
   .footer__nav {
-    width: 1000px;
-    text-align: center;
-    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    width: 10rem;
+  //   height: 100%;
     margin: 0 auto;
     .footer__link {
-      display: inline-block;
+  //     display: inline-block;
       font-size: 2.5rem;
-      margin: 0 0.8rem;
-      .footer__icon {
-        vertical-align: middle;
-        color: $complement-teal;
-        cursor: pointer;
-        &:hover {
-          color: $complement-teal-shade-4;
-        }
-      }
+  //     margin: 0 0.8rem;
+  //     .footer__icon {
+  //       vertical-align: middle;
+        color: $white;
+  //       cursor: pointer;
+  //       &:hover {
+  //         color: $complement-teal-shade-4;
+  //       }
+  //     }
     }    
   }
 }

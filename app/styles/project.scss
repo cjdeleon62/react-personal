@@ -1,9 +1,8 @@
-.project__list {
-  width: 1000px;
-  margin: 0 auto;
-  margin-top: 3rem;
- 
-  .project__list__title {
+.projects {
+  // margin: 0 auto;
+  padding-top: 3rem;
+  width: 100%;
+  .projects__title {
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
@@ -18,32 +17,35 @@
     border-radius: .7rem;
   }
 
-  .project {
-    background: $dark-blue;
-    text-align: center;
-    vertical-align: middle;
-    height: 300px;
-    width: 400px;
-    display:  inline-block;
-    margin:0 50px;
-    margin-bottom: 5rem;
-    cursor: pointer;
-    z-index: 1;
+  .project__list {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .project {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background: $dark-blue;
+      height: 15rem;
+      width: 100%;
+      // margin-bottom: 5rem;
+      cursor: pointer;
 
-    & .fade {
-      opacity: 0;
+      &:nth-child(even) {
+        background-color: $white;
+        .project__title {
+          color: $black;
+        }
+      }
+  
+      .project__title {
+        color: $white;
+        font-size: 1rem;
+      }
     }
-
-    .project__title {
-      color: $white;
-      font-size: 2rem;
-      margin-top: 8rem;
-    }
-  }
-  .project__active {
-    @extend .project;
-    text-align: left;
-    color: $white;
   }
 }
 

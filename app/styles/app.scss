@@ -2,8 +2,10 @@ html, body {
   margin: 0;
   background: $whitesmoke;
   color: $dark-grey;
-}
-
-.container {
-  padding-top: 3rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
 }

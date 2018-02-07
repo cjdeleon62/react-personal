@@ -11,7 +11,6 @@ const RoutesComponent = () => {
       <Switch>
         <Route exact path='/' component={BioComponent} />
         <Route path='/portfolio' component={ProjectListComponent} />
-      </Switch>
     </div>
   )
 }

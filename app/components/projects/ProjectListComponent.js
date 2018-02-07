@@ -53,16 +53,18 @@ class ProjectListComponent extends Component {
 
   render() {
     return (
-      <div className="project__list">
-        <div className="project__list__title">My Portfolio</div>
+      <div className="projects">
+        <div className="projects__title">My Portfolio</div>
         <hr />
-        {projects.map(project => (
-          <ProjectComponent
-            key={project.title}
-            project={project}
-            openModal={this.handleOpenModal}
-          />
-        ))}
+        <div className="project__list">
+          {projects.map(project => (
+            <ProjectComponent
+              key={project.title}
+              project={project}
+              openModal={this.handleOpenModal}
+            />
+          ))}
+        </div>
         <ProjectModalComponent
           isModalOpen={this.state.modal}
           onModalClose={this.handleCloseModal}

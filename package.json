@@ -6,7 +6,7 @@
   "scripts": {
     "build:dev": "webpack --env=dev",
     "build:prod": "webpack -p --env=prod",
-    "start:dev": "npm run build:dev && webpack-dev-server --progress --colors",
+    "dev": "npm run build:dev && webpack-dev-server --progress --colors",
     "lint": "eslint app test",
     "test": "npm run lint && cross-env NODE_PATH=./app mocha test/setup.js test/**/*Test.js",
     "test:watch": "cross-env NODE_PATH=./app mocha --watch test/setup.js test/**/*Test.js"

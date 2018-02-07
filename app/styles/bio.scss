@@ -1,11 +1,11 @@
 .bio {
-  margin: 0 auto;
-  padding-bottom: 3rem;
-
+  padding: 3rem 0;
+  background-color: $dark-grey;
+  color: $white;
   .welcome__header {
     width: 50%;
     margin: 0 auto;
-    padding-top: 12rem;
+    margin-top: 9rem;
     text-align: center;
     font-size: 4rem;
   }
