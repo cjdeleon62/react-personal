@@ -1,6 +1,5 @@
 .projects {
-  // margin: 0 auto;
-  padding-top: 3rem;
+    padding: 5rem 0;
   width: 100%;
   .projects__title {
     text-align: center;
@@ -19,28 +18,25 @@
 
   .project__list {
     width: 100%;
-    margin: 0 auto;
+    justify-content: space-around;
+    padding: 0 8rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     
     .project {
       display: flex;
+      justify-content: center;
       align-items: center;
-      justify-content: space-around;
       background: $dark-blue;
       height: 15rem;
-      width: 100%;
-      // margin-bottom: 5rem;
+      width: 30%;
       cursor: pointer;
 
-      &:nth-child(even) {
-        background-color: $white;
-        .project__title {
-          color: $black;
-        }
+      &:after {
+        background-color: black;
+        content: "";
       }
-  
+
       .project__title {
         color: $white;
         font-size: 1rem;
