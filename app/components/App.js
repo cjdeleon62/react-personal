@@ -5,7 +5,7 @@ import ProjectListComponent from 'components/projects/ProjectListComponent';
 import FooterComponent from 'components/footer/FooterComponent';
 
 const AppComponent = () => (
-  <div className="container">
+  <div className="app">
     <HeaderComponent />
     <BioComponent />
     <ProjectListComponent />

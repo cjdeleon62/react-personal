@@ -51,15 +51,24 @@
       }
 
     }
+
+    .mobile__menu {
+      display: none;
+    }
   }
 }
 
-// .menu {
-//   float: right;
-//   background-color: $primary-shade-4;
-//   border-color: $primary-shade-4;
-//   color: $primary-shade-1;
-//   font-size: 26px;
-//   margin-top: 8px;
-//   margin-right: 12px;
-// }
+@media all and (max-width: 480px) {
+  .header {
+    .header__nav {
+      .header__items {
+        display: none;
+      }
+      .mobile__menu {
+        display: inline-flex;
+        font-size: 1.5rem;
+        align-content: flex-end;
+      }
+    }
+  }
+}

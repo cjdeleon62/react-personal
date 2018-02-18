@@ -1,5 +1,5 @@
 // variables
-$font-stack: 'Roboto', sans-serif;
+
 // colors
 $primary-color: #28596E;
 $primary-shade-1: #082430;
@@ -25,9 +25,6 @@ $dark-blue: #273469;
 $light-blue: #00a6e2;
 $pink: #d62246;
 
-// Needed to import the font images through the loaders
-$fa-font-path : '~font-awesome/fonts';
-
 * {
   box-sizing: border-box;
   color:inherit;
@@ -38,8 +35,6 @@ $fa-font-path : '~font-awesome/fonts';
   box-sizing: border-box;
 }
 
-// Don't forget about our font awesome styles!
-@import "~font-awesome/scss/font-awesome.scss";
 @import "app.scss";
 @import "header.scss";
 @import "bio.scss";
