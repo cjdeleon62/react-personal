@@ -54,12 +54,12 @@ class HeaderComponent extends Component {
           <div className="header__title">
             <Link to='/'>{siteName}</Link>
           </div>
-          {/* <button className="menu">
-          <i className="menu__button fa fa-bars" aria-hidden="true" type="button" />
-        </button> */}
-        <div className="header__items">
-          {navItems.map( navItem => this.loadNavItems(navItem))}
-        </div>
+          <div className="header__items">
+            {navItems.map( navItem => this.loadNavItems(navItem))}
+          </div>
+          <div className="mobile__menu">
+            <i className="fas fa-bars" />
+          </div>
         </div>
       </div>
     )
