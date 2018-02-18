@@ -1,4 +1,8 @@
+// imports
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
 // variables
+$font-stack: 'Fira Sans', sans-serif;
 
 // colors
 $primary-color: #28596E;
@@ -28,6 +32,7 @@ $pink: #d62246;
 * {
   box-sizing: border-box;
   color:inherit;
+  font-family: $font-stack;
 }
 
 *:before,
@@ -35,8 +40,12 @@ $pink: #d62246;
   box-sizing: border-box;
 }
 
+.contain {
+  padding: 0 5rem;
+}
 @import "app.scss";
 @import "header.scss";
 @import "bio.scss";
 @import "project.scss";
+@import "contact.scss";
 @import "footer.scss";

@@ -8,6 +8,7 @@ const projects = [
     description: 'A webpage using React where you can search and watch videos grabbed from the youtube API.',
     technology: 'React.js, Webpack, Node.js',
     link: '//google.com',
+    stack: ['react', 'node'],
     // 'image': '../../app/assets/images/ShowtimeReactPic.jpg',
   },
   {
@@ -15,6 +16,7 @@ const projects = [
     description: 'A small project using React and Redux where you can post, modify, and delete blog posts.',
     technology: 'React.js, Redux, Webpack, Node.js',
     link: '//instagram.com',
+    stack: ['react', 'node'],
     // 'image': '../../app/assets/images/HelloBlogPic.jpg',
   },
   {
@@ -22,6 +24,7 @@ const projects = [
     description: 'You can look up the weather in any U.S. city. Uses the openweathermap API.',
     technology: 'React.js, Redux, Webpack, Node.js',
     link: '//facebook.com',
+    stack: ['react', 'node'],
     // 'image': '../../app/assets/images/WeatherMapsPic.jpg',
   }
 ]
@@ -52,11 +55,9 @@ class ProjectListComponent extends Component {
   }
 
   render() {
-    console.log(projects);
     return (
-      <div className="projects">
-        <div className="projects__title">My Portfolio</div>
-        <hr />
+      <div className="projects contain">
+        <div className="projects__title">Recent Work</div>
         <div className="project__list">
           {projects.map(project => (
             <ProjectComponent

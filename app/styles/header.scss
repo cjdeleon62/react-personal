@@ -6,55 +6,48 @@
   background-color: $dark-grey;
   color: $white;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   
-  .header__nav {
-    width: 85%;
+  .header__title {
+    font-size: 1.5rem;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .header__items {
+    display: inline-flex;
     height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-
-    .header__title {
-      font-size: 1.5rem;
-
+    
+    
+    .header__menu__item {
+      display: inline-flex;
+      align-items: center;
+      list-style: none;
+      height: 100%;
+      padding: 0 0.7rem;
+      cursor: pointer;
+      
       a {
         text-decoration: none;
       }
-    }
 
-    .header__items {
-      display: inline-flex;
-      height: 100%;
-      
-      
-      .header__menu__item {
-        display: inline-flex;
-        align-items: center;
-        list-style: none;
-        height: 100%;
-        padding: 0 0.7rem;
-        cursor: pointer;
-        
-        a {
-          text-decoration: none;
-        }
-
-        &:hover {
-          border-bottom: thick solid $pink;
-          color: $pink;
-        }
+      &:hover {
+        border-bottom: thick solid $pink;
+        color: $pink;
       }
-
-      .is-active {
-        @extend .header__menu__item:hover;
-      }
-
     }
 
-    .mobile__menu {
-      display: none;
+    .is-active {
+      @extend .header__menu__item:hover;
     }
+
+  }
+
+  .mobile__menu {
+    display: none;
   }
 }
 
