@@ -57,7 +57,7 @@ class ProjectListComponent extends Component {
   render() {
     return (
       <div className="projects contain">
-        <div className="projects__title">Recent Work</div>
+        <div className="projects__title">Recent Works</div>
         <div className="project__list">
           {projects.map(project => (
             <ProjectComponent

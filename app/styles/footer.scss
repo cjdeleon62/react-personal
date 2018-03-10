@@ -3,17 +3,20 @@
   background: $light-blue;
   bottom: 0;
   width: 100%;
+
   .footer__nav {
     display: flex;
     align-items: center;
     width: 80%;
     height: 100%;
     margin: 0 auto;
+
     .footer__link {
       display: flex;
       align-items: center;
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin-right: 1rem;
+
       .footer__icon {
         color: $white;
         cursor: pointer;
@@ -21,17 +24,21 @@
           color: $dark-blue;
         }
       }
+
       .footer__icon__text {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         margin-left: 1rem;
       }
     }
+
     .footer__copyright {
       display: inline-flex;
       margin-left: auto;
       font-size: 1rem;
+
       .copyright__icon {
         font-size: 1rem;
+        padding-top: .125rem;
       }
     }  
   }

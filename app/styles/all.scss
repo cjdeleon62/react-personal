@@ -43,9 +43,17 @@ $pink: #d62246;
 .contain {
   padding: 0 5rem;
 }
+
+.scale {
+  transition: transform .5s;
+  &:hover {
+    transform: scale(1.125);
+  }
+
+}
 @import "app.scss";
 @import "header.scss";
 @import "bio.scss";
 @import "project.scss";
-@import "contact.scss";
+@import "email.scss";
 @import "footer.scss";

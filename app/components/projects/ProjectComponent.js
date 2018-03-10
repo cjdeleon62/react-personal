@@ -21,10 +21,10 @@ class ProjectComponent extends Component {
   
   render() {
     const { project } = this.props;
-    const { title, description, stack } = project;
+    const { title, description, stack, link } = project;
 
     return (
-      <div key={title} className="project" onClick={this.handleModal}>
+      <div key={title} className="project scale" onClick={this.handleModal}>
         <div className="project__title">
           <strong>{title}</strong>
         </div>
@@ -33,7 +33,12 @@ class ProjectComponent extends Component {
           <div className="project__stack">
             Tech Stack:
             {stack.map(program => (<i key={`${title}-${program}`} className={programIcons[program]} />))}
-          </div>        
+          </div>
+          <a href={link}>
+            <button>
+              Check it out
+            </button>
+          </a>
         </div>
       </div>
     );

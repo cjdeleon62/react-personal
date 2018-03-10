@@ -1,14 +1,13 @@
 .projects {
   padding-top: 5rem;
-  padding-bottom: 5rem;
   width: 100%;
 
   .projects__title {
-    text-align: left;
-    font-size: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
     font-weight: 600;
-    width: 25%;
     margin-bottom: 2rem;
+    color: $dark-blue;
   }
 
   .project__list {
@@ -19,22 +18,20 @@
     
     .project {
       display: flex;
-      cursor: pointer;
       width: 50%;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
       padding: 0 1rem;
 
       .project__title {
-        width: 20rem;
-        color: $light-blue;
+        color: $dark-blue;
         font-size: 2.25rem;
         display: flex;
         align-items: center;
         justify-content: space-around;
         margin-bottom: 1rem;
-        border-bottom: .1125rem solid $light-blue;
+        border-bottom: .1125rem solid $dark-blue;
         padding-bottom: 1rem;
       }
       
@@ -48,7 +45,7 @@
 
         .project__stack {
           width: 100%;
-          margin-top: 1rem;
+          margin: 1rem 0;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -65,8 +62,24 @@
             color: green;
           }
         }
-      }
+        
+        a {
+          text-decoration: none;
+          color: $white;
 
+          button {
+            border-radius: .5rem;
+            padding: .5rem;
+            cursor: pointer;
+            opacity: .8;
+            background-color:rgba(0, 166, 226, 0.8);
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
     }
   }
 }
