@@ -16,7 +16,7 @@ const navItems = [
   {
     text: 'Contact Me',
     key: 'contacts',
-    linkUri: '/contacts',
+    linkUri: '/contact-me',
   },
 ]
 // TODO
@@ -49,8 +49,8 @@ class HeaderComponent extends Component {
 
   render() {
     return (
-      <div className="header">
-        <div className="header__nav">
+      <div className="header contain">
+        {/* <div className="header__nav"> */}
           <div className="header__title">
             <Link to='/'>{siteName}</Link>
           </div>
@@ -60,7 +60,7 @@ class HeaderComponent extends Component {
           <div className="mobile__menu">
             <i className="fas fa-bars" />
           </div>
-        </div>
+        {/* </div> */}
       </div>
     )
   };

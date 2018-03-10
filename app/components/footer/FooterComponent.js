@@ -1,23 +1,12 @@
 import React from 'react';
 
-const mobileFooterIcons = [
-  { 
-    iconClass: 'fa fa-linkedin',
-    iconText: 'Linkedin',
-  },
-  {
-    iconClass: 'fa fa-github',
-    iconText: 'Github',
-  },
-];
-
 const FooterIcons = [ 
   {
-    iconClass: 'fa fa-linkedin-square',
+    iconClass: 'fab fa-linkedin',
     iconText: 'Linkedin',
   },
   {
-    iconClass: 'fa fa-github-square',
+    iconClass: 'fab fa-github',
     iconText: 'Github',
   },
 ];

@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 
+const programIcons = {
+  react: 'fab fa-react',
+  node: 'fab fa-node-js',
+};
+
+
 class ProjectComponent extends Component {
   constructor(props) {
     super(props);
 
-    this.renderProjectView = this.renderProjectView.bind(this);
     this.handleModal = this.handleModal.bind(this);
   }
 
@@ -13,22 +18,28 @@ class ProjectComponent extends Component {
     openModal(project);
   }
 
-  renderProjectView(title) {
-    return (
-      <div className="project__title">
-        {title}
-      </div>
-    );
-  }
-
+  
   render() {
     const { project } = this.props;
-    console.log('here is the project', project);
-    const { title } = project;
+    const { title, description, stack, link } = project;
 
     return (
-      <div key={title} className="project" onClick={this.handleModal}>
-        {this.renderProjectView(title)}
+      <div key={title} className="project scale" onClick={this.handleModal}>
+        <div className="project__title">
+          <strong>{title}</strong>
+        </div>
+        <div className="project__description">
+          {description}
+          <div className="project__stack">
+            Tech Stack:
+            {stack.map(program => (<i key={`${title}-${program}`} className={programIcons[program]} />))}
+          </div>
+          <a href={link}>
+            <button>
+              Check it out
+            </button>
+          </a>
+        </div>
       </div>
     );
   }

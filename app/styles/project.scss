@@ -1,44 +1,72 @@
 .projects {
-    padding: 5rem 0;
+  padding-top: 5rem;
   width: 100%;
+
   .projects__title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
-  }
-
-  hr {
     margin-bottom: 2rem;
-    height: .2rem;
-    background: $dark-grey;
-    border: none;
-    border-radius: .7rem;
+    color: $dark-blue;
   }
 
   .project__list {
     width: 100%;
-    justify-content: space-around;
-    padding: 0 8rem;
+    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     
     .project {
       display: flex;
-      justify-content: center;
+      width: 50%;
+      flex-direction: column;
       align-items: center;
-      background: $dark-blue;
-      height: 15rem;
-      width: 30%;
-      cursor: pointer;
-
-      &:after {
-        background-color: black;
-        content: "";
+        padding-bottom: 1rem;
       }
+      .project__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 1.25rem;
+        line-height: 1.5;
 
-      .project__title {
-        color: $white;
-        font-size: 1rem;
+        .project__stack {
+          width: 100%;
+          margin: 1rem 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            margin-left: .25rem;
+          }
+
+          .fa-react {
+            color: $light-blue;
+          }
+  
+          .fa-node-js {
+            color: green;
+          }
+        }
+        
+        a {
+          text-decoration: none;
+          color: $white;
+
+          button {
+            border-radius: .5rem;
+            padding: .5rem;
+            cursor: pointer;
+            opacity: .8;
+            background-color:rgba(0, 166, 226, 0.8);
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
       }
     }
   }
